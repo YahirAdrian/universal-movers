@@ -1,1 +1,16 @@
-$red: red;
+// COLOR PALETTE
+$primary: #FF572F;
+$secondary: #235EAB;
+$light: #FFFFFF;
+$white: #FBFCFE;
+$dark: #161616;
+$orange-gradient: linear-gradient(270deg, #FF572F 0%, #FFCD47 97.59%);
+
+// FONT
+$font-family-base: 'Poppins', sans-serif;
+$headings-font-family: 'Poppins', serif;
+
+// NAVLINKS
+
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';

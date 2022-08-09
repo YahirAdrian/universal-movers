@@ -1,0 +1,45 @@
+@use  'custom' as *;
+
+@mixin buttonGradient(){
+    border-radius: 40px;
+    background: $orange-gradient;
+    color: $white;
+    font-weight: 400;
+    padding: 0.5rem 1.25rem;
+    text-align: center;
+
+    @include media-breakpoint-down(sm){
+        font-size: 0.75rem;
+    }
+
+    @include media-breakpoint-up(md){
+        padding: 1rem 3rem;
+    }
+    text-decoration: none;
+
+    &:hover{
+        box-shadow: #ffffff1a 0px 1px 1px 0px inset, #32325d40 0px 50px 100px -20px, #0000004d 0px 30px 60px -30px;
+    }
+}
+
+@mixin btnTransparent(){
+    color: $white;
+    border: none;
+    font-size: 0.75rem;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 0.5rem 1.25rem;
+
+    @include media-breakpoint-down(sm){
+        font-size: 0.75rem;
+    }
+
+    @include media-breakpoint-up(md){
+        padding: 1rem 3rem;
+
+        font-size: 1rem;
+    }
+    &:hover{
+        box-shadow: #ffffff1a 0px 1px 1px 0px inset, #32325d40 0px 50px 100px -20px, #0000004d 0px 30px 60px -30px;
+    }
+}

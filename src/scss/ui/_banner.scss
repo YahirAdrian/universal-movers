@@ -1,0 +1,27 @@
+@use 'custom' as *;
+@use 'utils/mixins' as m;
+
+.banner{
+    background-image: url('../img/banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 40rem;
+
+    -webkit-backdrop-filter: blur(100px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.5);
+
+    .content{
+        max-width: 36.375rem;
+    }
+
+    .btn-pricing{
+        @include m.btnTransparent();
+    }
+
+    .btn-work{
+        @include m.buttonGradient();
+    }
+
+}

@@ -1,6 +1,4 @@
 // AQUI VAN LOS FORWADS
-@use '/custom' as *;
-
-body{
-    background-color: $red;
-}
+@use 'custom' as *;
+@forward 'header';
+@forward 'banner';
