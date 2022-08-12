@@ -1,0 +1,44 @@
+@use 'custom' as *;
+@use 'utils/animations' as animations;
+.footer{
+    .attributions{
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background-color: $dark;
+        border-radius: 10px;
+        padding: 15px;
+        padding-top: 5px;
+        cursor: pointer;
+        border: 1px solid $white;
+        height: 2rem;
+        width: 150px;
+        overflow: hidden;
+        
+        .github{
+            img{
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+
+        p{
+            margin-bottom: 0.5rem;
+        }
+
+        &::before{
+            content: 'Attribution';
+        }
+
+        &:hover{
+            animation-name: attributionsGrow;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-iteration-count: 1;
+            padding: 15px;
+            padding-top: 15px;
+            height: auto;
+            width: auto;
+        }
+    }
+}

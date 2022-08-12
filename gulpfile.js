@@ -4,7 +4,6 @@ const { src, dest, watch, series} = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const purgecss = require('gulp-purgecss');
 const rename = require('gulp-rename');
-
 // Imagenes
 const imagemin = require('gulp-imagemin');
 
@@ -43,6 +42,7 @@ function imagenes(done) {
 
 exports.css = css;
 exports.dev = dev;
+exports.cssbuild = cssbuild;
 exports.imagenes = imagenes;
 exports.default = series( imagenes, css, dev );
 exports.build = series( cssbuild );
