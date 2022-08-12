@@ -1,0 +1,35 @@
+@use 'custom' as *;
+@use 'utils/mixins' as m;
+
+.contact{
+    .contact-image{
+        background-image: url('../img/image_04.png');
+        background-color: #00000080;
+        background-blend-mode: overlay;
+    }
+
+    form{
+        input{
+            padding: 1.125rem;
+            color: $dark;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .btn-send{
+            @include m.btnTransparent($white);
+            border: 3px solid $white;
+            border-radius: 2rem;
+        }
+
+        .btn-contact{
+            @include m.btnTransparent($white);
+            display: block;
+            width: 100%;
+            padding: 0 !important;
+            text-align: center;
+            margin-top: 1rem;
+        }
+    }
+}

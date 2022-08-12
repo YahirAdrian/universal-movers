@@ -1,0 +1,22 @@
+@use 'custom' as *;
+@use 'utils/mixins' as m;
+.removals{
+    .removal-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 300px;
+    }
+
+    .removals-icons{
+        width: 2rem;
+        height: 2rem;
+        margin: 1.5rem 0.5rem;
+    }
+
+    .btn-transparent{
+        @include m.btnTransparent($primary);
+        font-weight: 700;
+        padding-left: 0.25rem !important;
+    }
+}

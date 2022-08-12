@@ -37,7 +37,7 @@ header{
             padding-bottom: 0.5rem;
             padding-left: 2rem;
             padding-right: 1.75rem;
-            @include m.buttonGradient();
+            @include m.btnGradient();
             padding: 0.4rem 0.75rem;
         }
 

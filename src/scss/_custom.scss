@@ -5,6 +5,8 @@ $light: #FFFFFF;
 $white: #FBFCFE;
 $dark: #161616;
 $orange-gradient: linear-gradient(270deg, #FF572F 0%, #FFCD47 97.59%);
+$orange-gradient-opacity: linear-gradient(270deg, #ff572fcc 0%, #ffcd47cc 97.59%);
+$shadow: #ffffff1a 0px 1px 1px 0px inset, #32325d40 0px 50px 100px -20px, #0000004d 0px 30px 60px -30px;
 
 // FONT
 $font-family-base: 'Poppins', sans-serif;
@@ -12,5 +14,20 @@ $headings-font-family: 'Poppins', serif;
 
 // NAVLINKS
 
+// HEADINGS
+$h1-font-size: 3.375rem;
+$h2-font-size: 3rem;
+$h3-font-size: 2rem;
+$h4-font-size: 1.625rem;
+$headings-font-weight: 400;
+
+// UTILITIES
+.text-opacity{
+    color: opacify($color: $dark, $amount: 0.7);
+}
+
+.bg-gradient-primary{
+    background-image: $orange-gradient;
+}
 
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';

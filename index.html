@@ -7,88 +7,335 @@
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"/>
-        <link rel="shortcut icon" href="src/img/logo.png" type="image/x-icon">
+        <link rel="shortcut icon" href="build/img/icon.ico" type="image/x-icon">
         <title>Universal Movers</title>
         <link rel="stylesheet" href="build/css/app.css">
     </head>
 
     <body>
-        <header class="header border-top border-primary">
-          <nav class="navbar container-fluid bg-dark navbar-dark">
-              <a href="#" class="navbar-brand logo d-flex flex-row align-items-center flex-md-column me-auto p-3 px-md-0">
-                  <img class="logo-icon" src="build/img/logo.png" alt="Universal Movers Logo"/>
+      <header class="header">
+        <nav class="navbar container-fluid bg-dark navbar-dark">
+            <a href="#" class="navbar-brand logo d-flex flex-row align-items-center flex-md-column me-auto p-3 px-md-0">
+                <img class="logo-icon" src="build/img/logo.png" alt="Universal Movers Logo"/>
 
-                  <div class="title d-flex flex-column align-items-center ps-md-3">
-                    <img class="logo-title" src="build/img/logo_title.png" alt="Universal Movers"/>
-                    <img class="slogan" src="build/img/logo_subtitle.png" alt="Universal Movers German Slogan: 'De Specialist in Verhuizingen'"/>
-                  </div>
-              </a>
+                <div class="title d-flex flex-column align-items-center ps-md-3">
+                  <img class="logo-title" src="build/img/logo_title.png" alt="Universal Movers"/>
+                  <img class="slogan" src="build/img/logo_subtitle.png" alt="Universal Movers German Slogan: 'De Specialist in Verhuizingen'"/>
+                </div>
+            </a>
 
-              <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+            <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-              <div class="navigation-bar p-4 collapse d-md-block" id="navbarToggleExternalContent">
-                    
-                  <ul class="contact navbar-nav my-auto order-1 flex-column justify-content-between flex-md-row ps-3 d-none d-md-block">
-                      <li class="nav-item d-inline-block me-md-3">
-                          <a href="#" class="nav-link">
-                              <img src="build/icons/telephone.svg" alt="Telephone icon"/>
-                              085 203 11 44, 06 386 133 25
-                          </a>
-                      </li>
-
-                      <li class="nav-item d-inline-block ms-md-3">
-                          <a href="#" class="nav-link">
-                              <img src="build/icons/mail.svg" alt="EMail icon"/>
-                              info@universal-movers.nl
-                          </a>
-                      </li>
-                  </ul>
-
-                  <ul class="navbar-nav mb-2 mb-lg-0 order-0 flex-column flex-md-row justify-content-evenly align-items-start align-items-md-center">
-                    <li class="nav-item">
-                      <a class="btn-move text-md-primary fw--md-bold text-decoration-none" aria-current="page" href="#">To Move House</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Clear</a>
+            <div class="navigation-bar p-4 collapse d-md-block" id="navbarToggleExternalContent">
+                  
+                <ul class="contact navbar-nav my-auto mb-3 order-1 flex-column justify-content-between flex-md-row ps-3 d-none d-md-block">
+                    <li class="nav-item d-inline-block me-md-3">
+                        <a href="#" class="nav-link">
+                            <img src="build/icons/telephone.svg" alt="Telephone icon"/>
+                            085 203 11 44, 06 386 133 25
+                        </a>
                     </li>
 
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">FAQ</a>
+                    <li class="nav-item d-inline-block ms-md-3">
+                        <a href="#" class="nav-link">
+                            <img src="build/icons/mail.svg" alt="EMail icon"/>
+                            info@universal-movers.nl
+                        </a>
                     </li>
+                </ul>
 
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">News</a>
-                    </li>
+                <ul class="navbar-nav mb-2 mb-lg-0 order-0 flex-column flex-md-row justify-content-evenly align-items-start align-items-md-center">
+                  <li class="nav-item">
+                    <a class="btn-move text-md-primary fw--md-bold text-decoration-none" aria-current="page" href="#">To Move House</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Clear</a>
+                  </li>
 
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">About Us</a>
-                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">FAQ</a>
+                  </li>
 
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Contact</a>
-                    </li>
-                  </ul>                        
-              </div>
-            </nav>
-        </header>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                  </li>
 
-        <div class="banner container-fluid d-flex flex-column justify-content-center ps-3 ps-sm-5 text-white">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
 
-          <div class="content">
-            <h1 class="display-4 fw-bold text-uppercase">Storage services</h1>
-            <h2 class="display-4 fw-light">The specailist in removals</h2>
-            <p class="text-light">You can move carefree with Universal Movers, the moving specialist!</p>
-
-            <div class="buttons d-flex justify-content-around py-3">
-                <a class="btn-work" href="#">View your work</a>
-                <a class="btn-pricing" href="#">View pricing <img src="build/icons/arrow.svg" alt="Arrow icon"></a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>                        
             </div>
-          </div>
+      </nav>
+    </header>
 
+    <div class="banner container-fluid d-flex flex-column justify-content-center ps-3 ps-sm-5 text-white">
+
+      <div class="content">
+        <h1 class="display-4 fw-bold text-uppercase">Storage services</h1>
+        <h2 class="display-4 fw-light">The specailist in removals</h2>
+        <p class="text-light">You can move carefree with Universal Movers, the moving specialist!</p>
+
+        <div class="buttons d-flex justify-content-around py-3">
+            <a class="btn-work" href="#">View your work</a>
+            <a class="btn-pricing" href="#">View pricing <img src="build/icons/arrow-light.svg" alt="Arrow icon"></a>
+        </div>
+      </div>
+
+    </div>
+
+    <section class="first-information container-xl p-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>How we work</h2>
+          <p class="subtitle fs-4">Of course you do that with moving company Universal Movers</p>
+          <p class="fw-bold fs-6 opacity-75">Are you planning to move soon? Then see how we can support you. We can take over the entire responsibility for your move so that you don't have to worry about it at all. But we can also help you with partial relocation support such as moving assistance, renting moving boxes, renting a moving lift and our packing service. You decide how we help you.</p>
+
+          <a href="#" class="get-in-touch mt-5">Get in touch with us <img src="build/icons/arrow-dark.svg" alt="Arrow icon"></a>
         </div>
 
-        <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="step col-6">
+              <p class="step-box text-white fw-bold">01</p>
+              <p class="step-instruction fw-bold fs-3">Approach</p>
+              <p class="step-content opacity-75 fw-bold">Quality services through careful approach</p>
+            </div>
+
+            <div class="step col-6">
+              <p class="step-box text-white fw-bold">02</p>
+              <p class="step-instruction fw-bold fs-3">Finance</p>
+              <p class="step-content opacity-75 fw-bold">Affordable prices with best value for money</p>
+            </div>
+
+            <div class="step col-6">
+              <p class="step-box text-white fw-bold">03</p>
+              <p class="step-instruction fw-bold fs-3">Satisfaction</p>
+              <p class="step-content opacity-75 fw-bold">100% customer satisfaction guaranteed</p>
+            </div>
+
+            <div class="step col-6">
+              <p class="step-box text-white fw-bold">04</p>
+              <p class="step-instruction fw-bold fs-3">Insurance</p>
+              <p class="step-content opacity-75 fw-bold">Insured up to an amount of €100,000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="our-methods container-xl mt-5 g-3">
+      <div class="heading-box d-flex justify-content-between mb-5">
+        <h2>Our methods</h2>
+        <a href="#" class="btn-transparent view-more">View more <img src="build/icons/arrow-primary.svg" alt="Arrow icon"/></a>
+      </div>
+
+      <div class="row text-white justify-content-around">
+        <div class="col-md-7 bg-1 mb-3 mb-md-1">
+          <div class="content-1">
+            <h3>Professional moving at affordable prices</h3>
+            <p>Universal Movers is a professional moving company that offers affordable prices. </p>
+            <a href="#" class="view-project mt-5">View project <img src="build/icons/arrow-light.svg" alt="Arrow icon"/></a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="row flex-column height-100">
+
+            <div class="col bg-2 p-0 mb-3">
+              <div class="content-2 mb-2">
+                <h3>What makes Universal Movers different from other moving companies?</h3>
+                <a href="#" class="btn-transparent">View more <img src="build/icons/arrow-light.svg" alt="Arrow icon"/></a>
+              </div>
+            </div>
+
+            <div class="col bg-3 p-0">
+              <div class="content-3">
+                <h3>Organized and efficient method</h3>
+                <a href="#" class="btn-transparent">View more <img src="build/icons/arrow-light.svg" alt="Arrow icon"/></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="removals container-xl mt-5">
+        <span class="text-primary d-block text-center text-uppercase fw-bold mb-2">Years of experience</span>
+        <h2 class="text-center mb-2">Removals from A to Z</h2>
+        <p class="p-3 text-center text-opacity">Our moving company does everything it can to ensure a neat, professional move. We can take care of everything related to the move for you, where you only need support. Whether it concerns taking over the entire relocation or engaging flexible relocation assistance. In addition, consider, for example, our additional moving services such as the packing service, the assembly service, the removal lift service, temporary storage or renting moving boxes.</p>
+
+          <div class="row m-1 m-md-3">
+            <div class="removal-item col-6 col-md-4 p-4">
+              <img class="d-block removals-icons" src="build/icons/people.svg" alt="Icon people"/>
+              <h3>Private removals</h3>
+              <p class="text-opacity fw-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et nisl hendrerit, aliquet mi sed, </p>
+              <a class="btn-transparent" href="#">Read more</a>
+            </div>
+
+            <div class="removal-item col-6 col-md-4 p-4">
+              <img class="d-block removals-icons" src="build/icons/check.svg" alt="Icon people"/>
+              <h3>Business recolocations</h3>
+              <p class="text-opacity fw-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et nisl hendrerit, aliquet mi sed, </p>
+              <a class="btn-transparent" href="#">Read more</a>
+            </div>
+
+            <div class="removal-item col-6 col-md-4 p-4">
+              <img class="d-block removals-icons" src="build/icons/comb_pen.svg" alt="Icon pen"/>
+              <h3>International removals</h3>
+              <p class="text-opacity fw-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et nisl hendrerit, aliquet mi sed, </p>
+              <a class="btn-transparent" href="#">Read more</a>
+            </div>
+
+            <div class="removal-item col-6 col-md-4 p-4">
+              <img class="d-block removals-icons" src="build/icons/questions.svg" alt="Icon questions"/>
+              <h3>Rent a moving lift</h3>
+              <p class="text-opacity fw-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et nisl hendrerit, aliquet mi sed, </p>
+              <a class="btn-transparent" href="#">Read more</a>
+            </div>
+
+            <div class="removal-item col-6 col-md-4 p-4">
+              <img class="d-block removals-icons" src="build/icons/time.svg" alt="Icon timer"/>
+              <h3>Inpakservice</h3>
+              <p class="text-opacity fw-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et nisl hendrerit, aliquet mi sed, </p>
+              <a class="btn-transparent" href="#">Read more</a>
+            </div>
+
+            <div class="removal-item col-6 col-md-4 p-4">
+              <img class="d-block removals-icons" src="build/icons/write_notes.svg" alt="Icon notes"/>
+              <h3>Rent moving boxes</h3>
+              <p class="text-opacity fw-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et nisl hendrerit, aliquet mi sed, </p>
+              <a class="btn-transparent" href="#">Read more</a>
+            </div>
+        </div>
+      </section>
+
+
+      <section class="contact container-xl mb-5">
+        <div class="row">
+          <div class="contact-image col-md-6 p-5">
+            <p class="display-4 text-white">Requesting a quote only takes a few minutes of your time</p>
+            <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere culpa quae mollitia cum recusandae, repellendus aspernatur assumenda neque sequi architecto quaerat officia voluptatem, sed illo amet dolore natus modi laborum?</p>
+          </div>
+
+          <div class="col-md-6 bg-gradient-primary">
+              <form class="p-5">
+                <h2 class="fw-bold fs-3 text-white">Send Inquiry</h2>
+                <p class="fw-bold text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid tenetur, necessitatibus consequatur ullam odio deleniti molestias magnam numquam sit earum deserunt a distinctio, dolorem amet suscipit enim cum, modi quis!</p>
+                <input type="text" class="form-control" placeholder="Your name"/>
+                <input type="email" class="form-control" placeholder="Email"/>
+                <input type="text" class="form-control" placeholder="Paste your figma design url"/>
+                
+                <button type="submit" class="btn-send d-block w-100">Send an inquiry</button>
+                <a href="#" class="btn-contact">Get in touch with us <img src="build/icons/arrow-light.svg" alt="Arrow icon"></a>
+              </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="google-reviews container-xl mb-5 p-4">
+        <div class="row">
+          <div class="review-banner col-md-2 d-flex flex-column aligin-items-center">
+            <img src="build/img/google_reviews_logo.png" alt="Google reviews logo"/>
+            <span class="fs-3 text-center mt-4">UITSTEKEND</span>
+            <span class="fs-5 text-center mt-3">Gebaseerd op 28 recensies.</span>
+          </div>
+
+          <div class="col-md-5 mb-4">
+            <div class="review">
+              <div class="profile d-flex align-items-center">
+                <img class="rounded-circle d-inline mt-5" src="build/img/woman_profile_picture.png" alt="Profile picture"/>
+                <div class="profile-name d-inline">
+                  <p class="m-0 ms-3 d-inline-block">
+                    <span class="fs-5 d-block">Kedar Gaikwad</span>
+                    <span class="fs-6 d-block">Vice president</span>
+                  </p>
+                  
+                </div>
+              </div>
+              
+              <div class="review-content">
+                <img src="build/icons/stars.svg" alt="5 stars review icon"/>
+                <p class="text-opacity fw-bold fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et nisl hendrerit, aliquet mi sed, scelerisque tortor. Aliquam eu </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-5 mb-4">
+            <div class="review">
+              <div class="profile d-flex align-items-center">
+                <img class="rounded-circle d-inline mt-5" src="build/img/woman_profile_picture.png" alt="Profile picture"/>
+                <div class="profile-name d-inline">
+                  <p class="m-0 ms-3 d-inline-block">
+                    <span class="fs-5 d-block">Kedar Gaikwad</span>
+                    <span class="fs-6 d-block">Vice president</span>
+                  </p>
+                  
+                </div>
+              </div>
+              
+              <div class="review-content">
+                <img src="build/icons/stars.svg" alt="5 stars review icon"/>
+                <p class="text-opacity fw-bold fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et nisl hendrerit, aliquet mi sed, scelerisque tortor. Aliquam eu </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <footer class="container-fluid footer bg-dark text-white p-5">
+        <div class="row align-items-lg-center">
+          <div class="col-lg-3 my-3 my-lg-1 d-flex flex-row align-items-center flex-md-column p-3 px-md-0">
+            <img class="" src="build/img/logo.png" alt="Universal Movers Logo"/>
+  
+            <div class="title d-flex flex-column align-items-center ps-md-3">
+              <img class="logo-title" src="build/img/logo_title.png" alt="Universal Movers"/>
+              <img class="slogan" src="build/img/logo_subtitle.png" alt="Universal Movers German Slogan: 'De Specialist in Verhuizingen'"/>
+            </div>
+          </div>
+        <div class="col-lg-3 my-3 my-lg-1">
+          <h4>Universal</h4>
+          <ul class="nav flex-column">
+            <li class="nav-link"><a class="text-white opacity-75 text-decoration-none" href="#">Moving privately</a></li>
+            <li class="nav-link"><a class="text-white opacity-75 text-decoration-none" href="#">Moving company</a></li>
+            <li class="nav-link"><a class="text-white opacity-75 text-decoration-none" href="#">Clear house</a></li>
+            <li class="nav-link"><a class="text-white opacity-75 text-decoration-none" href="#">Clear company</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 my-3 my-lg-1">
+          <h4>Movers</h4>
+          <ul class="nav flex-column">
+            <li class="nav-link"><a class="text-white opacity-75 text-decoration-none" href="#">Moving tips</a></li>
+            <li class="nav-link"><a class="text-white opacity-75 text-decoration-none" href="#">Moving checklist</a></li>
+            <li class="nav-link"><a class="text-white opacity-75 text-decoration-none" href="#">Recolocation costs</a></li>
+            <li class="nav-link"><a class="text-white opacity-75 text-decoration-none" href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 my-3 my-lg-1">
+          <h4>Contact</h4>
+          <ul class="nav flex-column">
+            <li class="nav-link">
+              <a class="text-white opacity-75 text-decoration-none" href="#"><img src="build/icons/location.svg" alt="Location icon"/> KVK 85030473 BTW NL863479054B01</a>
+            </li>
+  
+            <li class="nav-link">
+              <a class="text-white opacity-75 text-decoration-none" href="#"><img src="build/icons/mail.svg" alt="Email icon"/>info@universal-movers.nl</a>
+            </li>
+  
+            <li class="nav-link">
+              <a class="text-white opacity-75 text-decoration-none" href="#"><img src="build/icons/telephone.svg" alt="Telephone icon/">+31 (0)85 203 11 44</a>
+            </li>
+          </ul>
+        </div>
+
+        </div>
+      </footer>
+      <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     </body>
 </html>

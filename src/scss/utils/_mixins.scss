@@ -1,6 +1,6 @@
 @use  'custom' as *;
 
-@mixin buttonGradient(){
+@mixin btnGradient(){
     border-radius: 40px;
     background: $orange-gradient;
     color: $white;
@@ -18,17 +18,18 @@
     text-decoration: none;
 
     &:hover{
-        box-shadow: #ffffff1a 0px 1px 1px 0px inset, #32325d40 0px 50px 100px -20px, #0000004d 0px 30px 60px -30px;
+        box-shadow: $shadow;
     }
 }
 
-@mixin btnTransparent(){
-    color: $white;
+@mixin btnTransparent($textColor){
+    color: $textColor;
     border: none;
     font-size: 0.75rem;
     text-decoration: none;
     font-weight: 400;
     padding: 0.5rem 1.25rem;
+    background: transparent;
 
     @include media-breakpoint-down(sm){
         font-size: 0.75rem;
@@ -40,6 +41,6 @@
         font-size: 1rem;
     }
     &:hover{
-        box-shadow: #ffffff1a 0px 1px 1px 0px inset, #32325d40 0px 50px 100px -20px, #0000004d 0px 30px 60px -30px;
+        box-shadow: $shadow;
     }
 }

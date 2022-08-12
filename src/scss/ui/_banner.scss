@@ -17,11 +17,11 @@
     }
 
     .btn-pricing{
-        @include m.btnTransparent();
+        @include m.btnTransparent($white);
     }
 
     .btn-work{
-        @include m.buttonGradient();
+        @include m.btnGradient();
     }
 
 }
